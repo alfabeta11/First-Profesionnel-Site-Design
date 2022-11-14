@@ -335,15 +335,15 @@ section:not(.mail-us):hover {
 
 
 .languages li:first-child {
-  list-style-image: url('/images/List-Icons/html_code_slash.svg');
+  list-style-image: url('images/List-Icons/html_code_slash.svg');
 }
 
 .languages li:nth-child(2) {
-  list-style-image: url('/images/List-Icons/css-braces-asterisk.svg');
+  list-style-image: url('images/List-Icons/css-braces-asterisk.svg');
 }
 
 .languages li:nth-child(3) {
-  list-style-image: url('/images/List-Icons/filetype-js.svg');
+  list-style-image: url('images/List-Icons/filetype-js.svg');
 }
 
 #hakkimizda img {
