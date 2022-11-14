@@ -153,7 +153,7 @@ i {
 
 /* Buttons */
 
-input[type="submit"] {
+input[type="submit"], button a {
   padding: var(--sm-spacing) var(--spacing);
 }
 
@@ -166,7 +166,6 @@ button {
 
 button a {
   display: block;
-  padding: var(--sm-spacing) var(--spacing);
   margin: 0;
   width: 100%;
   color: #2371E7;
@@ -175,6 +174,22 @@ button:hover {
   background-color: var(--second-color);
 } 
 
+input[type="submit"] {
+  display: block;
+  width: 50%;
+  max-width: 150px;
+  background-color: #2371E7;
+  color: var(--main-color);
+  font-size: calc(2 * var(--font-size));
+  border: 2px solid #2371E7;
+  margin: var(--spacing) auto;
+}
+
+input[type="submit"]:hover {
+  border: 2px solid #2371E7;
+  color: #2371E7;
+  background-color: var(--main-color);
+}
 /* ========== LAYOUTS ========= */
 
 .container {
@@ -311,7 +326,7 @@ section {
 }
 
 section:not(.mail-us):hover {
-  border: 2px solid var(--second-color);
+  border: 2px solid #2371E7;
 }
 
 .grid article {
@@ -366,6 +381,11 @@ article figure {
 
 /** == Bize Ulasin == **/
 
+.mail-us:hover {
+  border: 2px solid #2371E7;
+  box-shadow: unset;
+}
+
 .mail-us form {
   margin: var(--spacing) auto;
   overflow: hidden;
@@ -376,35 +396,26 @@ article figure {
   margin: var(--sm-spacing) 0;
   place-items: stretch flex-start;
 }
-.form-input input {
+
+.form-input input, textarea {
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, .2);
-  
+  border: 1px solid #7794;
+  border-radius: 2px;
 }
 
 textarea {
-  width: 100%;
   resize: vertical;
 }
 
-input[type="submit"] {
-  display: block;
-  width: 50%;
-  max-width: 200px;
-  background-color: #2371E7;
-  color: var(--main-color);
-  font-size: calc(2 * var(--font-size));
-  border: none;
-  margin: var(--spacing) auto var(--spacing);
-}
-
 /** == FOOTER == **/
+
 footer {
   /* margin-top: var(--sm-spacing); */
   padding: var(--spacing);
   box-shadow: 0 -1px 4px #344;
   text-align: center;
 }
+
 .socials {
   display: flex;
   justify-content: space-around;
@@ -412,6 +423,7 @@ footer {
   max-width: 100px;
   margin: 0 auto var(--sm-spacing);
 }
+
 /* ========== MEDIA QUERIES ========= */
 
 @media only screen and (min-width: 650px) {
