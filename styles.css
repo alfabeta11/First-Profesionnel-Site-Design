@@ -189,7 +189,7 @@ input[type="submit"] {
   background-color: #2371E7;
   color: var(--main-color);
   font-size: calc(1.5 * var(--font-size));
-  border: 2px solid #2371E7;
+  border: 2px solid var(--main-color);
   margin: var(--spacing) auto;
   text-align: center;
 }
