@@ -31,6 +31,15 @@
   box-sizing: border-box;
 }
 
+html {scroll-behavior: smooth}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2371E7
+}
+
 body {
   font-family: 'Poppins', 'Trebuchet MS', sans-serif;
   font-size: var(--font-size);
@@ -42,12 +51,7 @@ body {
   max-width: 100%;
 }
 
-::-webkit-scrollbar {
-  width: 4px;
-}
-::-webkit-scrollbar-thumb {
-  background: #2371E7
-}
+
 /* ========== TYPOGRAPHY -- LINKS -- ICONS -- FIGCAPTIONS ========= */
 
 p, a {
@@ -60,11 +64,6 @@ p {
   color: var(--text-color);
   letter-spacing: -0.25px;  
 }
-
-/* .service-details p {
-  font-family: 'Inconsolata', 'Poppins', Arial, Helvetica, sans-serif;
-  font-weight: 500;
-} */
 
 h1, h2, h3, h4, h5, h6 {text-align: center;}
 
@@ -253,6 +252,10 @@ ul {
   display: none;
 }
 
+.nav-bar.open, .header-button.open {
+  display: block;
+}
+
 .header-button {
   grid-column: span 3;
   padding-bottom: var(--sm-spacing);
@@ -263,12 +266,10 @@ ul {
   margin: unset;
   width: 80%; 
   max-width: 150px;
-  /* background-color: unset; */
 }
 
 
 /* == MAIN == */
-
 /*= Welcome =*/
 
 div.welcome {
@@ -489,7 +490,6 @@ footer p {
   }
 
   .nav-bar, .header-button {
-    display: block;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -529,4 +529,4 @@ footer p {
   .header-button {
     grid-column: span 6;
   }
-} 
+}  
